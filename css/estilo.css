@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    background-color: #F4EBFB; /* Lila muy claro */
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #4A2C70; /* Morado oscuro */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+h1 {
+    color: #4A2C70; /* Morado oscuro */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* Estilos de botones */
+input[type="button"] {
+    background-color: #814FB0; /* Morado medio */
+    border: none;
+    border-radius: 20px;
+    color: #ffffff; /* Blanco */
+    padding: 12px 24px;
+    cursor: pointer;
+    margin: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #693E8F; /* Morado más oscuro */
+}
+
+/* Estilos de la sección */
+.section {
+    background-color: #ffffff; /* Blanco */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Estilos de subtítulos */
+.section h2 {
+    color: #4A2C70; /* Morado oscuro */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* Estilos de párrafos */
+.section p {
+    color: #6E4A8C; /* Morado ligeramente más claro */
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+table, th, td {
+    border: 1px solid;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+}
+
