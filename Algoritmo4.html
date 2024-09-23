@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 4</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script> function sucesion() {
+        var numero = 0;
+        var numAnterior = 0;
+        var numeroSiguiente = 1;
+        var salida = "";
+        var entrada = parseInt(document.getElementById("val1").value);
+
+        if (!isNaN(entrada) && entrada >= 0) {
+        do {
+            if ((numAnterior + numero) <= entrada){
+                salida += `${numero}, `;
+            } else {
+                salida += `${numero}.`;
+            }
+            numAnterior = numero;
+            numero = numeroSiguiente;
+            numeroSiguiente = (numAnterior + numero);
+        } while ((numero <= entrada));
+
+        document.getElementById("res").innerHTML = `Resultado: <br> ${salida}`;
+    } else {
+        document.getElementById("res").innerHTML = `Algo esta mal`;
+    }
+}
+    </script>
+</head>
+<body>
+    <h1> Algoritmo 4 </h1>
+    <h2> Encontrar e imprimir la sucesión de Fibonacci hasta un límite </h2>
+    <input type="text" id="val1" placeholder="Ingrese un Numero"> <br>
+    <input type="button" value="Obtener Sucesion de Fibonacci" onclick="sucesion()">
+    <p id="res"> Resultado: </p>
+    <a href="index.html"> Volver al menu principal </a>
+</body>
+</html>
