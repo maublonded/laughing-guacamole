@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💿 Memorama 💿 </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/memoramaObfuscado.js"></script>
+</head>
+<body onload="Revolver(); fondo();">  
+    <h1> 💽 Memorama 💽 </h1>
+    <table id="tabla">
+        <tr>
+            <td><img src="img/atras.jpg" id="0" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,0)"></td>
+            <td><img src="img/atras.jpg" id="1" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,1)"></td>
+            <td><img src="img/atras.jpg" id="2" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,2)"></td>
+            <td><img src="img/atras.jpg" id="3" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,3)"></td>
+        </tr>
+        <tr>
+            <td><img src="img/atras.jpg" id="4" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,4)"></td>
+            <td><img src="img/atras.jpg" id="5" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,5)"></td>
+            <td><img src="img/atras.jpg" id="6" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,6)"></td>
+            <td><img src="img/atras.jpg" id="7" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,7)"></td>
+        </tr>
+        <tr>
+            <td><img src="img/atras.jpg" id="8" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,8)"></td>
+            <td><img src="img/atras.jpg" id="9" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,9)"></td>
+            <td><img src="img/atras.jpg" id="10" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,10)"></td>
+            <td><img src="img/atras.jpg" id="11" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,11)"></td>
+        </tr>
+        <tr>
+            <td><img src="img/atras.jpg" id="12" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,12)"></td>
+            <td><img src="img/atras.jpg" id="13" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,13)"></td>
+            <td><img src="img/atras.jpg" id="14" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,14)"></td>
+            <td><img src="img/atras.jpg" id="15" alt="" srcset="" class="imagen" onclick="cambiarImagen(this,15)"></td>
+        </tr>
+    </table>
+    <h2 id="contador"> Pares Encontrados: 0 </h2> <br>
+    <input type="button" value="Ver Respuestas" onclick="verRespuestas()">
+    <input type="button" value="Reiniciar" onclick="Reiniciar()">
+    <p id="impresion"></p>  
+    <a href="index.html"> Volver al menu principal </a>
+</body>
+</html>
