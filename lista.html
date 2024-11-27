@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<script>
+    function CambioTexto() {
+    var texto = document.getElementById("Elemento").value;
+    document.getElementById("pushh").value = `Push(${texto})`;
+    document.getElementById("unshiftt").value = `Unshift(${texto})`;
+    document.getElementById("indexx").value = `indexOf(${texto})`;
+    document.getElementById("includess").value = `includes(${texto})`;
+
+    var numero = document.getElementById("Posicion").value;
+    document.getElementById("insertt").value = `insert_at(${texto},${numero})`;
+}
+
+    function pushhh(){
+        var lista = document.getElementById("tabla");
+        var renglon = "";
+        if (lista.hasChildNodes()) {
+            renglon = lista.firstChild;
+        } else {
+            renglon = document.createElement("tr");
+            lista.appendChild(renglon);
+        }
+
+        //Crear la celda
+        var celda = document.createElement("td");
+        celda.style.border = "1px solid black";
+
+        //Agregarle contenido a la celda
+        celda.textContent = document.getElementById("Elemento").value;
+        renglon.appendChild(celda);
+
+    }
+</script>
+<body>
+    <h1>Lista</h1>
+    Elemento:
+    <input type="text" id="Elemento" onkeyup="CambioTexto()"> 
+    <input type="button" value="push()" id="pushh" onclick="pushhh()"> 
+    <input type="button" value="pop()">
+    <input type="button" value="shift()">
+    <input type="button" value="unshift()" id="unshiftt">
+    <input type="button" value="indexOf()" id="indexx">
+    <input type="button" value="includes()" id="includess">
+    <input type="button" value="sort()">
+    <input type="button" value="reverse()">
+
+    <br><br>Posicion:
+    <input type="number" name="" id="Posicion" min="0" onkeyup="CambioTexto()">
+    <input type="button" value="insert_at()" id="insertt">
+    <input type="button" value="clear()">
+    <br><br>
+
+    <table>
+        <tbody id="tabla"></tbody>
+    </table>
+
+</body>
+</html>
